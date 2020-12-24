@@ -1,24 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DartsTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zjb-1D-yUW">
+                                <rect key="frame" x="5" y="49" width="404" height="808"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-Db-r7V">
+                                        <rect key="frame" x="36.5" y="0.0" width="331" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TbB-QV-dUD"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Dart Tracker">
+                                                <attributes>
+                                                    <font key="NSFont" size="46" name="Copperplate-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="htD-EG-wpX">
+                                        <rect key="frame" x="48.5" y="70" width="307" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jnB-S3-odL">
+                                                <rect key="frame" x="0.0" y="1.5" width="128.5" height="97"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-O1-2Na">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="71.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="501">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="70" name="Copperplate-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFu-06-elt">
+                                                        <rect key="frame" x="0.0" y="76.5" width="128.5" height="20.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20.5" id="9Je-Ki-9Sw"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="player1">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="20" name="Copperplate"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="wFu-06-elt" firstAttribute="leading" secondItem="jnB-S3-odL" secondAttribute="leading" id="Cfe-wt-acJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wFu-06-elt" secondAttribute="trailing" id="al3-Wd-2H6"/>
+                                                    <constraint firstItem="v8k-O1-2Na" firstAttribute="leading" secondItem="jnB-S3-odL" secondAttribute="leading" id="f4M-c2-I7t"/>
+                                                    <constraint firstAttribute="trailing" secondItem="v8k-O1-2Na" secondAttribute="trailing" id="qwo-h6-u9L"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qHR-qt-QHH">
+                                                <rect key="frame" x="178.5" y="1.5" width="128.5" height="97"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkE-tv-zyy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="71.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="501">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="70" name="Copperplate-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-0B-SGk">
+                                                        <rect key="frame" x="0.0" y="76.5" width="128.5" height="20.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Player2">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="20" name="Copperplate"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="QkE-tv-zyy" secondAttribute="trailing" id="DKY-Ov-Xaz"/>
+                                                    <constraint firstItem="wMY-0B-SGk" firstAttribute="leading" secondItem="qHR-qt-QHH" secondAttribute="leading" id="Han-vD-juG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wMY-0B-SGk" secondAttribute="trailing" id="LcR-WF-JjJ"/>
+                                                    <constraint firstItem="QkE-tv-zyy" firstAttribute="leading" secondItem="qHR-qt-QHH" secondAttribute="leading" id="d6c-zq-8bb"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="yXX-vu-hkU"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eAA-Ln-Gvx">
+                                        <rect key="frame" x="0.0" y="190" width="404" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XD1-BS-coe">
+                                                <rect key="frame" x="0.0" y="0.0" width="404" height="30"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Player Turn">
+                                                        <attributes>
+                                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Enter score here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiO-81-qth">
+                                                <rect key="frame" x="0.0" y="35" width="404" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="6Rk-oj-mxA"/>
+                                                </constraints>
+                                                <attributedString key="attributedText"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qj-Oz-wFb">
+                                                <rect key="frame" x="150.5" y="80" width="103" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="6uC-lB-vKE"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Submit Score">
+                                                            <attributes>
+                                                                <font key="NSFont" size="15" name="Copperplate"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMe-qP-VqW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RiO-81-qth" firstAttribute="leading" secondItem="eAA-Ln-Gvx" secondAttribute="leading" id="9EZ-CH-j9O"/>
+                                            <constraint firstAttribute="trailing" secondItem="RiO-81-qth" secondAttribute="trailing" id="Avi-io-do1"/>
+                                            <constraint firstItem="XD1-BS-coe" firstAttribute="leading" secondItem="eAA-Ln-Gvx" secondAttribute="leading" id="Ifw-LO-oDX"/>
+                                            <constraint firstAttribute="height" constant="100" id="P8Q-LU-YVw"/>
+                                            <constraint firstAttribute="trailing" secondItem="XD1-BS-coe" secondAttribute="trailing" id="usn-V8-xy4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="121" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-fy-zzR">
+                                        <rect key="frame" x="0.0" y="310" width="404" height="498"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Each player starts with a score of 501 and takes turns to throw 3 darts. The score for each turn is calculated and deducted from the players total. Bullseye scores 50, the outer ring scores 25 and a dart in the double or treble ring counts double or treble the segment score.</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="17" name="Copperplate"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eAA-Ln-Gvx" firstAttribute="leading" secondItem="Zjb-1D-yUW" secondAttribute="leading" id="GAe-DK-vHe"/>
+                                    <constraint firstAttribute="trailing" secondItem="eAA-Ln-Gvx" secondAttribute="trailing" id="oJi-th-dEs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="Zjb-1D-yUW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="7DJ-Kx-E9W"/>
+                            <constraint firstItem="Zjb-1D-yUW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="X5d-Hy-M2n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zjb-1D-yUW" secondAttribute="bottom" constant="5" id="gkl-VS-LdY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zjb-1D-yUW" secondAttribute="trailing" constant="5" id="kwT-Qp-XZG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player1NameLabel" destination="wFu-06-elt" id="wCl-tw-aka"/>
+                        <outlet property="player1ScoreLabel" destination="v8k-O1-2Na" id="NwS-em-Ot1"/>
+                        <outlet property="player2NameLabel" destination="wMY-0B-SGk" id="pBS-si-JR8"/>
+                        <outlet property="player2ScoreLabel" destination="QkE-tv-zyy" id="F3X-nR-TOu"/>
+                        <outlet property="playerTurnLabel" destination="XD1-BS-coe" id="nlW-7o-Qhi"/>
+                        <outlet property="turnScoreTextField" destination="RiO-81-qth" id="O1L-A4-HaG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

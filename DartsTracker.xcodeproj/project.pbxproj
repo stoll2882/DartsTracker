@@ -13,6 +13,7 @@
 		9FEED12B2592EB6100F161F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FEED1292592EB6100F161F4 /* Main.storyboard */; };
 		9FEED12D2592EB6300F161F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FEED12C2592EB6300F161F4 /* Assets.xcassets */; };
 		9FEED1302592EB6300F161F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FEED12E2592EB6300F161F4 /* LaunchScreen.storyboard */; };
+		9FEED13C25943F3200F161F4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEED13B25943F3200F161F4 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9FEED12C2592EB6300F161F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FEED12F2592EB6300F161F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FEED1312592EB6300F161F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FEED13B25943F3200F161F4 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				9FEED1232592EB6100F161F4 /* AppDelegate.swift */,
 				9FEED1252592EB6100F161F4 /* SceneDelegate.swift */,
 				9FEED1272592EB6100F161F4 /* ViewController.swift */,
+				9FEED13B25943F3200F161F4 /* Player.swift */,
 				9FEED1292592EB6100F161F4 /* Main.storyboard */,
 				9FEED12C2592EB6300F161F4 /* Assets.xcassets */,
 				9FEED12E2592EB6300F161F4 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FEED13C25943F3200F161F4 /* Player.swift in Sources */,
 				9FEED1282592EB6100F161F4 /* ViewController.swift in Sources */,
 				9FEED1242592EB6100F161F4 /* AppDelegate.swift in Sources */,
 				9FEED1262592EB6100F161F4 /* SceneDelegate.swift in Sources */,
@@ -289,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2895V9L3LU;
 				INFOPLIST_FILE = DartsTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2895V9L3LU;
 				INFOPLIST_FILE = DartsTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
